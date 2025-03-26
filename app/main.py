@@ -80,7 +80,7 @@ def main():
         image_array = jpeg_bytes_to_ndarray(jpeg_bytes=message.data)
 
         # Resize the image
-        resized_image = resize_image_array(image=image_array, width=1920, height=480)
+        resized_image = resize_image_array(image=image_array, width=1920, height=1080)
 
         # Convert the resized image back to JPEG bytes
         jpeg_bytes = ndarray_to_jpeg_bytes(image=resized_image, quality=95)
