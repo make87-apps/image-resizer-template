@@ -9,6 +9,8 @@ version = "0.0.1"
 dependencies = [
   "make87",
   "make87_messages",
+  "opencv-python-headless>=4.11.0,<5.0",
+  "numpy>=2.2.0,<3.0",
 ]
 description = "A small example package"
 readme = "README.md"
@@ -19,3 +21,9 @@ packages = ["app"]
 
 [tool.setuptools.package-data]
 app = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-mock",
+]
